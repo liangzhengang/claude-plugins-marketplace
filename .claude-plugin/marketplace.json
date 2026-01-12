@@ -1,17 +1,23 @@
 {
-  "name": "Claude Plugins Marketplace",
-  "description": "精选 Claude Code 插件索引",
-  "version": "1.0.0",
+  "name": "liangzhengang-marketplace",
+  "owner": {
+    "name": "liangzhengang",
+    "email": "liangzhengang@example.com"
+  },
+  "metadata": {
+    "description": "精选 Claude Code 插件索引",
+    "version": "1.0.0"
+  },
   "plugins": [
     {
       "name": "uniapp-to-flutter",
-      "displayName": "UniApp 到 Flutter 转换器",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/liangzhengang/uniapp-to-flutter-plugin"
+      },
       "description": "将 UniApp 页面转换为 Flutter 页面的完整工作流，包含 UI 提取、多方案生成和评审",
       "version": "1.0.0",
-      "repository": "liangzhengang/uniapp-to-flutter-plugin",
-      "installCommand": "claude plugin install gh:liangzhengang/uniapp-to-flutter-plugin",
-      "tags": ["flutter", "uniapp", "migration"],
-      "categories": ["development", "mobile"]
+      "strict": false
     }
   ]
 }
