@@ -1,0 +1,24 @@
+{
+  "name": "uniapp-to-flutter",
+  "displayName": "UniApp 到 Flutter 转换器",
+  "version": "1.0.0",
+  "description": "将 UniApp 页面转换为 Flutter 页面的完整工作流，包含 UI 提取、多方案生成和评审",
+  "author": {
+    "name": "liangzhengang",
+    "github": "https://github.com/liangzhengang"
+  },
+  "repository": "https://github.com/liangzhengang/uniapp-to-flutter-plugin",
+  "tags": ["flutter", "uniapp", "migration", "conversion"],
+  "categories": ["development", "mobile", "code-generation"],
+  "keywords": ["flutter", "uniapp", "cross-platform", "migration", "converter"],
+  "features": [
+    "UI extraction to YAML",
+    "Component conversion",
+    "Pixel-level review",
+    "Multi-scheme generation"
+  ],
+  "installCommand": "claude plugin install gh:liangzhengang/uniapp-to-flutter-plugin",
+  "verified": false,
+  "license": "MIT",
+  "createdAt": "2025-01-12"
+}

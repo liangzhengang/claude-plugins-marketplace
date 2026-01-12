@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-12",
+  "plugins": [
+    {
+      "id": "uniapp-to-flutter",
+      "name": "uniapp-to-flutter",
+      "displayName": "UniApp 到 Flutter 转换器",
+      "shortDescription": "将 UniApp 页面转换为 Flutter 页面的完整工作流",
+      "description": "包含 UI 提取、多方案生成和评审，支持像素级精度转换",
+      "repository": "liangzhengang/uniapp-to-flutter-plugin",
+      "tags": ["flutter", "uniapp", "migration", "conversion"],
+      "categories": ["development", "mobile"],
+      "installCommand": "claude plugin install gh:liangzhengang/uniapp-to-flutter-plugin",
+      "verified": false,
+      "featured": true,
+      "stats": {
+        "stars": 0,
+        "downloads": 0
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "development",
+      "name": "开发工具",
+      "icon": "code"
+    },
+    {
+      "id": "mobile",
+      "name": "移动开发",
+      "icon": "smartphone"
+    },
+    {
+      "id": "code-generation",
+      "name": "代码生成",
+      "icon": "generate"
+    }
+  ]
+}
