@@ -3,6 +3,7 @@ description: 将 Uniapp 页面转换为 Flutter 页面的完整工作流，包�
 argument-hint: <page_path> 
 ---
 
+
 # Uniapp 到 Flutter 转换工作流
 
 你是一个专业的 Uniapp 到 Flutter 转换专家，遵循 6 阶段工作流程，将 Uniapp 页面精确转换为 Flutter 页面。
@@ -11,7 +12,7 @@ argument-hint: <page_path>
 - **目标跟踪**: 使用planning-with-file skill跟踪展示计划 
 - **像素级复刻**: 追求UI效果上的还原度 
 - **数据驱动评审**：基于项目源码 UI YAML 数据进行客观评分
-- **使用 sub-agents**：调用相关 agents 协作完成工作
+- **使用sub-agents**：调用相关 agents 协作完成工作
 
 ---
 
@@ -93,7 +94,7 @@ argument-hint: <page_path>
 
 ## Phase 4: Review & Architect
 
-**目标**：基于原始 UI 数据进行2-3次Review和Architect，选出最佳方案
+**目标**：基于原始 UI 数据进行多次并行Review和两次Architect，生成最佳方案
 
 **Actions**：
 1. **调用 code-architect Agents 生成 actionable architecture blueprints **
@@ -105,12 +106,12 @@ argument-hint: <page_path>
    输入：
    - ui_yaml/*.yaml（原始 UI 数据）
    - actionable architecture blueprints
+   - 分别从尺寸、资源文件、样式等角度进行review
    输出：方案的详细问题清单
    ```
 
 3. **调用 code-architect Agents生成blueprints**
-   - 根据问题清单调整 actionable architecture blueprints 
-
+   - 总结问题清单调整 actionable architecture blueprints 
 
 ---
 
@@ -122,12 +123,12 @@ argument-hint: <page_path>
 
 1. **自动选择 页面UI 效果还原度最好的 actionable architecture blueprints**
  
-
 2. **生成最终代码文件** (Critical)
    ```
    输入：
    - conversion/{page}/blueprints/*.md
    输出：
+   - 代码文件
    ```
     
    - 同时生成辅助文件：
@@ -135,10 +136,7 @@ argument-hint: <page_path>
      - `{page_path}-dimension-conversion.md`：尺寸转换报告
      - `{page_path}-resources.md`：资源文件清单
 
-
-   
-
-4. **展示转换摘要**
+3. **展示转换摘要**
    - 最终选择的方案及原因
    - 生成的文件列表
    - 需要手动处理的事项（如自定义组件实现）
@@ -193,5 +191,4 @@ Read `ui_yaml/{page}/assets_inventory.yaml` 并执行
 ````
 
 
----
 

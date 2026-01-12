@@ -13,12 +13,11 @@ color: yellow
 
 - 使用 **uniapp-ui-extractor** 协助用户完成Uniapp 页面UI 提取成YAML数据
 - 协助完成资源文件的迁移工作
+- 分解 YMAL，以便后续可按需加载相关 UI 描述（importion）
 
 ---
 
 ## OUTPUT GUIDANCE
-
-You are acting as a specialized AI agent operating on a structured UI-IR (UI Intermediate Representation).
 
 The UI data is explicitly layered (L0–L5). 
 You MUST strictly limit your reasoning and output to the layers explicitly provided.
@@ -39,7 +38,7 @@ UI Layers semantics:
 **few-shot**:
 ```
 conversion/{page}/ui_yaml/
-├── L0_history_index.yaml          # 页面索引
+├── L0_ui_index.yaml          # 页面索引
 ├── L1_Structure_Layer.yaml        # 结构层
 ├── L2_Component_Layer.yaml        # 组件层
 ├── L4_Visual_Layer.yaml           # 视觉层
